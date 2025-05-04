@@ -1,21 +1,22 @@
 import Styles from "./componentStyles.module.css";
+import Link from "next/link";
 
 const Nav = () => {
   return (
     <div>
       <ul className={Styles.navigation}>
         <li>
-          <a href="index.html">Logo Here</a>
+          <Link href="/">Logo Here</Link>
         </li>
         <li className="nav-element">
-          <a href="packages.html">Packages</a>
+          <Link href="/packages">Packages</Link>
         </li>
         <li className="nav-element">
-          <a href="kleanclub.html">Klean Club</a>
+          <Link href="/memberships">Memberships</Link>
           <ul className="dropdown">
-            <a href="kleanclub.html" className="drop-down-element">
+            <Link href="/memberships" className="drop-down-element">
               Klean Club
-            </a>
+            </Link>
             <a href="why-unlimited-page.html" className="drop-down-element">
               Why Unlimited?
             </a>
