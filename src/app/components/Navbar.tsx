@@ -56,6 +56,10 @@ const Navbar = () => {
             </a>
           </ul>
         </li>
+        <li>Events</li>
+        <li>
+          <button>Manage Membership</button>
+        </li>
       </ul>
     </nav>
   );
